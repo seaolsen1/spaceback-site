@@ -216,30 +216,36 @@ export default function Home() {
               See the transformation
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Real garages. Real results. Watch the before and after.
+              Real garages. Real results. Watch the full before and after.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <div className="rounded-2xl overflow-hidden border border-border shadow-lg">
-              <div className="bg-secondary px-4 py-2 text-sm font-semibold text-foreground">Before — The Mess</div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div className="rounded-2xl overflow-hidden border border-border shadow-lg bg-card">
               <video
                 src="/images/spaceback-before.mp4"
                 controls
                 playsInline
                 preload="metadata"
-                className="w-full aspect-[9/16] object-cover bg-black"
+                className="w-full aspect-[9/16] max-h-[500px] object-contain bg-black"
               />
+              <div className="px-5 py-4">
+                <p className="font-semibold text-foreground">Full Garage Transformation</p>
+                <p className="text-sm text-muted-foreground">Watch the complete before &amp; after</p>
+              </div>
             </div>
-            <div className="rounded-2xl overflow-hidden border border-border shadow-lg">
-              <div className="bg-secondary px-4 py-2 text-sm font-semibold text-foreground">After — The Result</div>
+            <div className="rounded-2xl overflow-hidden border border-border shadow-lg bg-card">
               <video
                 src="/images/spaceback-after.mp4"
                 controls
                 playsInline
                 preload="metadata"
-                className="w-full aspect-[9/16] object-cover bg-black"
+                className="w-full aspect-[9/16] max-h-[500px] object-contain bg-black"
               />
+              <div className="px-5 py-4">
+                <p className="font-semibold text-foreground">Organization in Action</p>
+                <p className="text-sm text-muted-foreground">From cluttered to clean in one session</p>
+              </div>
             </div>
           </div>
         </div>
