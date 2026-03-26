@@ -220,31 +220,35 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div className="rounded-2xl overflow-hidden border border-border shadow-lg bg-card">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            <div className="rounded-2xl overflow-hidden shadow-lg relative group cursor-pointer">
               <video
                 src="/images/spaceback-before.mp4"
-                controls
+                autoPlay
+                muted
+                loop
                 playsInline
-                preload="metadata"
-                className="w-full aspect-[9/16] max-h-[500px] object-contain bg-black"
+                className="w-full aspect-[9/16] max-h-[450px] object-cover"
               />
-              <div className="px-5 py-4">
-                <p className="font-semibold text-foreground">Full Garage Transformation</p>
-                <p className="text-sm text-muted-foreground">Watch the complete before &amp; after</p>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+              <div className="absolute bottom-4 left-4">
+                <p className="text-white font-semibold">Full Transformation</p>
+                <p className="text-white/70 text-sm">Before &amp; after in one session</p>
               </div>
             </div>
-            <div className="rounded-2xl overflow-hidden border border-border shadow-lg bg-card">
+            <div className="rounded-2xl overflow-hidden shadow-lg relative group cursor-pointer">
               <video
                 src="/images/spaceback-after.mp4"
-                controls
+                autoPlay
+                muted
+                loop
                 playsInline
-                preload="metadata"
-                className="w-full aspect-[9/16] max-h-[500px] object-contain bg-black"
+                className="w-full aspect-[9/16] max-h-[450px] object-cover"
               />
-              <div className="px-5 py-4">
-                <p className="font-semibold text-foreground">Organization in Action</p>
-                <p className="text-sm text-muted-foreground">From cluttered to clean in one session</p>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+              <div className="absolute bottom-4 left-4">
+                <p className="text-white font-semibold">Organization in Action</p>
+                <p className="text-white/70 text-sm">From cluttered to clean</p>
               </div>
             </div>
           </div>
