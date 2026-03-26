@@ -52,21 +52,21 @@ const pricingPlans = [
 
 const testimonials = [
   {
-    quote: "They came in, sorted everything, hauled away what we didn't need, and organized the rest. Our garage looks brand new.",
-    author: "Satisfied Customer",
-    location: "Tempe, AZ",
+    quote: "This is my garage!!! So happy to have my space back!",
+    author: "@d_swizzy34",
+    location: "via Instagram",
     rating: 5,
   },
   {
-    quote: "Stress-free from start to finish. They handled everything and even dropped donations off for us. Highly recommend.",
-    author: "Happy Homeowner",
-    location: "Mesa, AZ",
+    quote: "Insane switch up. So much space for activities!",
+    author: "@theharleydavis",
+    location: "via Instagram",
     rating: 5,
   },
   {
-    quote: "I can finally park in my garage again. The before and after is unreal. Worth every penny.",
-    author: "Repeat Client",
-    location: "Phoenix, AZ",
+    quote: "Can actually put that engine puller to use now!",
+    author: "@hskybeats",
+    location: "via Instagram",
     rating: 5,
   },
 ]
