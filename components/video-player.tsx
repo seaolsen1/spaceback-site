@@ -1,30 +1,19 @@
 "use client"
 
-import { useRef, useState, useEffect } from "react"
+import { useRef, useState } from "react"
 import { Play } from "lucide-react"
 
 export function VideoPlayer() {
   const videoRef = useRef<HTMLVideoElement>(null)
-  const [isPlaying, setIsPlaying] = useState(false)
-  const [isMobile, setIsMobile] = useState(false)
-
-  useEffect(() => {
-    setIsMobile(window.innerWidth < 768)
-  }, [])
-
-  useEffect(() => {
-    if (!isMobile && videoRef.current) {
-      videoRef.current.play().catch(() => {
-        // Autoplay blocked, show play button
-        setIsPlaying(false)
-      })
-    }
-  }, [isMobile])
+  const [showPlayButton, setShowPlayButton] = useState(true)
 
   const handlePlay = () => {
     if (videoRef.current) {
-      videoRef.current.play()
-      setIsPlaying(true)
+      videoRef.current.play().then(() => {
+        setShowPlayButton(false)
+      }).catch(() => {
+        // Still can't play, keep button visible
+      })
     }
   }
 
@@ -33,14 +22,15 @@ export function VideoPlayer() {
       <video
         ref={videoRef}
         src="/images/spaceback-video.mp4"
+        autoPlay
         muted
         loop
         playsInline
+        preload="auto"
         className="w-full aspect-[9/16] object-cover"
-        onPlay={() => setIsPlaying(true)}
-        onPause={() => setIsPlaying(false)}
+        onPlaying={() => setShowPlayButton(false)}
       />
-      {!isPlaying && (
+      {showPlayButton && (
         <button
           onClick={handlePlay}
           className="absolute inset-0 flex items-center justify-center bg-black/30 transition-opacity hover:bg-black/40"
