@@ -284,20 +284,27 @@ export default function Home() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-24 px-6">
+      <section className="py-24 px-6 bg-foreground">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-serif text-4xl md:text-5xl tracking-tight text-foreground mb-6">
-            Ready to get your space back?
+          <h2 className="font-serif text-4xl md:text-5xl tracking-tight text-background mb-6">
+            Ready to take your space back?
           </h2>
-          <p className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto">
+          <p className="text-lg text-background/70 mb-10 max-w-2xl mx-auto">
             Call or text for your free estimate. No pressure, no obligations — just honest pricing and real results.
           </p>
-          <a href="tel:6025446035">
-            <Button className="bg-accent hover:bg-accent/90 text-accent-foreground h-14 px-10 text-lg font-medium rounded-full">
-              Call (602) 544-6035
-              <Phone className="w-5 h-5 ml-2" />
-            </Button>
-          </a>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a href="tel:6025446035">
+              <Button className="bg-background text-foreground hover:bg-background/90 h-14 px-10 text-lg font-medium rounded-full">
+                Call (602) 544-6035
+                <Phone className="w-5 h-5 ml-2" />
+              </Button>
+            </a>
+            <a href="https://instagram.com/spacebackaz" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" className="border-background/30 text-background hover:bg-background/10 h-14 px-10 text-lg font-medium rounded-full">
+                Follow @SpacebackAZ
+              </Button>
+            </a>
+          </div>
         </div>
       </section>
 

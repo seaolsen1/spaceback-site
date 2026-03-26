@@ -25,7 +25,7 @@ export function StickyCTA() {
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
         <div className="hidden sm:block">
-          <p className="font-semibold text-foreground">Ready to reclaim your garage?</p>
+          <p className="font-semibold text-foreground">Ready to take your space back?</p>
           <p className="text-sm text-muted-foreground">Free estimates. Same-week availability.</p>
         </div>
         <Button className="bg-accent hover:bg-accent/90 text-accent-foreground h-12 px-8 text-base font-medium rounded-full flex-shrink-0 w-full sm:w-auto">
