@@ -300,7 +300,7 @@ export default function Home() {
               </Button>
             </a>
             <a href="https://instagram.com/spacebackaz" target="_blank" rel="noopener noreferrer">
-              <Button variant="outline" className="border-background/30 text-background hover:bg-background/10 h-14 px-10 text-lg font-medium rounded-full">
+              <Button className="bg-transparent border-2 border-white text-white hover:bg-white/10 h-14 px-10 text-lg font-medium rounded-full">
                 Follow @SpacebackAZ
               </Button>
             </a>
