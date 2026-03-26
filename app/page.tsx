@@ -3,6 +3,7 @@ import { BeforeAfterSlider } from "@/components/before-after-slider"
 import { PricingCard } from "@/components/pricing-card"
 import { TestimonialCard } from "@/components/testimonial-card"
 import { StickyCTA } from "@/components/sticky-cta"
+import { VideoPlayer } from "@/components/video-player"
 import { ArrowRight, MapPin, Clock, Truck, Phone } from "lucide-react"
 
 const pricingPlans = [
@@ -233,16 +234,7 @@ export default function Home() {
           </div>
 
           <div className="max-w-xs mx-auto">
-            <div className="rounded-3xl overflow-hidden shadow-2xl bg-black border-[8px] border-foreground/10">
-              <video
-                src="/images/spaceback-video.mp4"
-                autoPlay
-                muted
-                loop
-                playsInline
-                className="w-full aspect-[9/16] object-cover"
-              />
-            </div>
+            <VideoPlayer />
           </div>
         </div>
       </section>
