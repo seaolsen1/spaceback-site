@@ -4,7 +4,7 @@ import { PricingCard } from "@/components/pricing-card"
 import { TestimonialCard } from "@/components/testimonial-card"
 import { StickyCTA } from "@/components/sticky-cta"
 import { VideoPlayer } from "@/components/video-player"
-import { ArrowRight, MapPin, Clock, Truck, Phone } from "lucide-react"
+import { ArrowRight, MapPin, Clock, Truck, Phone, Shield } from "lucide-react"
 
 const pricingPlans = [
   {
@@ -141,8 +141,8 @@ export default function Home() {
                 <Clock className="w-6 h-6 text-foreground" />
               </div>
               <div>
-                <p className="font-semibold text-foreground">Same-Day Available</p>
-                <p className="text-sm text-muted-foreground">Fast scheduling for quick hauls</p>
+                <p className="font-semibold text-foreground">Done in One Session</p>
+                <p className="text-sm text-muted-foreground">Most jobs completed same day</p>
               </div>
             </div>
             <div className="flex items-center gap-4 p-4 rounded-xl bg-card border border-border">
@@ -150,19 +150,17 @@ export default function Home() {
                 <Truck className="w-6 h-6 text-foreground" />
               </div>
               <div>
-                <p className="font-semibold text-foreground">We Haul Everything</p>
-                <p className="text-sm text-muted-foreground">Junk removal & donation drop-off</p>
+                <p className="font-semibold text-foreground">We Handle Everything</p>
+                <p className="text-sm text-muted-foreground">Sort, haul, donate, organize</p>
               </div>
             </div>
             <div className="flex items-center gap-4 p-4 rounded-xl bg-card border border-border">
               <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center flex-shrink-0">
-                <svg className="w-6 h-6 text-foreground" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
-                </svg>
+                <Shield className="w-6 h-6 text-foreground" />
               </div>
               <div>
-                <p className="font-semibold text-foreground">5-Star Results</p>
-                <p className="text-sm text-muted-foreground">Trusted by Arizona homeowners</p>
+                <p className="font-semibold text-foreground">Stress-Free Process</p>
+                <p className="text-sm text-muted-foreground">You point, we do the heavy lifting</p>
               </div>
             </div>
           </div>
