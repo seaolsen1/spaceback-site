@@ -212,8 +212,8 @@ export default function Home() {
       <section className="relative py-32 px-6 overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/images/garage-after.jpg"
-            alt="Clean organized garage by Spaceback"
+            src="/images/garage-banner.jpg"
+            alt="Organized garage exterior by Spaceback"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-foreground/70" />
@@ -243,7 +243,7 @@ export default function Home() {
           <div className="max-w-sm mx-auto">
             <div className="rounded-2xl overflow-hidden shadow-2xl bg-black">
               <video
-                src="/images/spaceback-before.mp4"
+                src="/images/spaceback-video.mp4"
                 autoPlay
                 muted
                 loop

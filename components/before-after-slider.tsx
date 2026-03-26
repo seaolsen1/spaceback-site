@@ -43,7 +43,7 @@ export function BeforeAfterSlider() {
       {/* After Image (Background) */}
       <div className="absolute inset-0">
         <Image
-          src="/images/garage-after.jpg"
+          src="/images/garage-after.png"
           alt="Clean, organized garage after Spaceback transformation"
           fill
           className="object-cover"
