@@ -112,8 +112,8 @@ export default function Home() {
               <span className="text-muted-foreground">Space Back.</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto text-pretty">
-              Professional garage cleanout and organization for Arizona homeowners.
-              Keep what you want, remove what you don&apos;t, and organize your space for maximum use.
+              We&apos;re not a junk removal company — we&apos;re a space transformation company.
+              Keep what you love, remove what you don&apos;t, and walk into a garage that actually works for you.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
               <a href="tel:6025446035" className="w-full sm:w-auto">
