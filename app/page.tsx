@@ -177,7 +177,7 @@ export default function Home() {
               How it works
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              A simple, stress-free process to transform your garage.
+              A simple, stress-free process to transform your space.
             </p>
           </div>
 
@@ -186,7 +186,7 @@ export default function Home() {
               {
                 step: "01",
                 title: "Free Estimate",
-                description: "Call or text us. We\u2019ll ask a few questions about your garage and give you a straight-up quote. No surprises.",
+                description: "Call or text us. We\u2019ll ask a few questions about your space and give you a straight-up quote. No surprises.",
               },
               {
                 step: "02",
@@ -196,7 +196,7 @@ export default function Home() {
               {
                 step: "03",
                 title: "Enjoy Your Space",
-                description: "Walk into a clean, organized garage you\u2019ll actually want to use. Park your car inside again.",
+                description: "Walk into a clean, organized space you\u2019ll actually want to use.",
               },
             ].map((item) => (
               <div key={item.step} className="relative">
@@ -229,7 +229,7 @@ export default function Home() {
               See the transformation
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Real garages. Real results. Watch the full before and after.
+              Real spaces. Real results. Watch the full before and after.
             </p>
           </div>
 
@@ -247,7 +247,7 @@ export default function Home() {
               Transparent pricing
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Choose the service level that fits your garage and budget. Free estimates, always.
+              Choose the service level that fits your needs and budget. Free estimates, always.
             </p>
           </div>
 
@@ -290,7 +290,7 @@ export default function Home() {
             Ready to get your space back?
           </h2>
           <p className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto">
-            Call or text for your free estimate. No pressure, no obligations — just honest pricing and a clean garage.
+            Call or text for your free estimate. No pressure, no obligations — just honest pricing and real results.
           </p>
           <a href="tel:6025446035">
             <Button className="bg-accent hover:bg-accent/90 text-accent-foreground h-14 px-10 text-lg font-medium rounded-full">
