@@ -114,7 +114,7 @@ export default function Home() {
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto text-pretty">
               We&apos;re not a junk removal company — we&apos;re a space transformation company.
-              Keep what you love, remove what you don&apos;t, and walk into a garage that actually works for you.
+              Keep what you love, remove what you don&apos;t, and walk into a room that actually works for you.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
               <a href="tel:6025446035" className="w-full sm:w-auto">
