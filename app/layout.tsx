@@ -1,39 +1,34 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { DM_Serif_Display, Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
 const dmSerif = DM_Serif_Display({ 
-  subsets: ["latin"], 
-  weight: "400",
+  weight: '400',
+  subsets: ["latin"],
   variable: '--font-serif'
-});
+})
+
 const inter = Inter({ 
   subsets: ["latin"],
   variable: '--font-sans'
-});
+})
 
 export const metadata: Metadata = {
-  title: 'Spaceback | Premium Garage Cleanout & Organization in Arizona',
-  description: 'Transform your cluttered garage into an organized space you love. Professional garage cleanout, organization, and storage solutions serving the Phoenix metro area.',
-  generator: 'v0.app',
-  icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
+  title: 'Spaceback | Space Transformation in Phoenix, AZ',
+  description: 'Transform your cluttered spaces into functional, organized environments. Spaceback is Phoenix\'s premier space transformation company. Not junk removal — real transformation.',
+  keywords: ['space transformation', 'garage organization', 'Phoenix Arizona', 'home organization', 'decluttering'],
+  openGraph: {
+    title: 'Spaceback | Take Your Space Back',
+    description: 'Phoenix\'s premier space transformation company. Not junk removal — real transformation.',
+    type: 'website',
   },
+}
+
+export const viewport: Viewport = {
+  themeColor: '#f8faf7',
+  width: 'device-width',
+  initialScale: 1,
 }
 
 export default function RootLayout({
@@ -42,8 +37,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body className={`${inter.variable} ${dmSerif.variable} font-sans antialiased`}>
+    <html lang="en" className={`${dmSerif.variable} ${inter.variable}`}>
+      <body className="font-sans antialiased">
         {children}
         <Analytics />
       </body>
