@@ -107,9 +107,9 @@ export default function Home() {
               Serving Tempe, Mesa & the Phoenix Metro Area
             </div>
             <h1 className="font-serif text-5xl md:text-7xl tracking-tight text-foreground mb-6 text-balance">
-              Reclaim your garage.
+              Take your
               <br />
-              <span className="text-muted-foreground">Reclaim your space.</span>
+              <span className="text-muted-foreground">Space Back.</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto text-pretty">
               Professional garage cleanout and organization for Arizona homeowners.
