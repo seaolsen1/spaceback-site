@@ -6,18 +6,18 @@ import { Shield, Clock, ThumbsUp } from "lucide-react"
 const badges = [
   {
     icon: Shield,
-    title: "Fully Insured",
-    description: "Licensed and insured for your peace of mind",
+    title: "Stress-Free Process",
+    description: "You point, we do the heavy lifting",
   },
   {
     icon: Clock,
-    title: "Same Week Service",
-    description: "Fast scheduling to fit your timeline",
+    title: "Done in One Session",
+    description: "Most jobs completed same day",
   },
   {
     icon: ThumbsUp,
-    title: "5-Star Rated",
-    description: "Trusted by 500+ Phoenix homeowners",
+    title: "We Handle Everything",
+    description: "Sort, haul, donate, and organize",
   },
 ]
 
