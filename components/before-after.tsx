@@ -87,22 +87,22 @@ export function BeforeAfter() {
           onMouseDown={() => setIsDragging(true)}
           onTouchStart={() => setIsDragging(true)}
         >
-          {/* Before Image (full width) */}
+          {/* After Image (full width background) */}
           <Image
-            src="/images/garage-before.jpg"
-            alt="Space before transformation"
+            src="/images/garage-after.png"
+            alt="Space after transformation"
             fill
             className="object-cover"
           />
 
-          {/* After Image (clipped) */}
+          {/* Before Image (clipped from left) */}
           <div
             className="absolute inset-0 overflow-hidden"
             style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
           >
             <Image
-              src="/images/garage-after.png"
-              alt="Space after transformation"
+              src="/images/garage-before.jpg"
+              alt="Space before transformation"
               fill
               className="object-cover"
             />
