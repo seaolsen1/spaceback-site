@@ -49,7 +49,7 @@ export function BeforeAfterSlider() {
           className="object-cover"
           priority
         />
-        <div className="absolute bottom-4 right-4 bg-green-600 text-white px-4 py-2 rounded-full text-sm font-semibold tracking-wide shadow-lg">
+        <div className="absolute bottom-4 right-4 bg-foreground/80 text-background px-4 py-2 rounded-full text-sm font-semibold tracking-wide shadow-lg">
           After
         </div>
       </div>
@@ -66,7 +66,7 @@ export function BeforeAfterSlider() {
           className="object-cover"
           priority
         />
-        <div className="absolute bottom-4 left-4 bg-red-600 text-white px-4 py-2 rounded-full text-sm font-semibold tracking-wide shadow-lg">
+        <div className="absolute bottom-4 left-4 bg-foreground/80 text-background px-4 py-2 rounded-full text-sm font-semibold tracking-wide shadow-lg">
           Before
         </div>
       </div>

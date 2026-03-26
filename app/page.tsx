@@ -223,7 +223,7 @@ export default function Home() {
             Not just clean. Functional.
           </p>
           <p className="text-white/80 text-lg md:text-xl">
-            Clear it, load it, haul it. Clear it, clean it, and help get items organized.
+            We clear it, clean it, and organize it — so your space actually works for you.
           </p>
         </div>
       </section>
