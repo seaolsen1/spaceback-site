@@ -212,8 +212,8 @@ export default function Home() {
       <section className="relative py-32 px-6 overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/images/garage-exterior.jpg"
-            alt="Clean organized garage exterior"
+            src="/images/garage-after.jpg"
+            alt="Clean organized garage by Spaceback"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-foreground/70" />
