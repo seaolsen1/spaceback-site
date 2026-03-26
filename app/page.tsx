@@ -208,21 +208,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Statement Banner with Exterior Photo */}
-      <section className="relative py-32 px-6 overflow-hidden">
-        <div className="absolute inset-0">
-          <img
-            src="/images/garage-banner.jpg"
-            alt="Organized garage exterior by Spaceback"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-foreground/70" />
-        </div>
-        <div className="relative max-w-3xl mx-auto text-center">
-          <p className="font-serif text-3xl md:text-5xl text-white tracking-tight mb-4">
+      {/* Statement Banner */}
+      <section className="py-20 px-6 bg-foreground">
+        <div className="max-w-3xl mx-auto text-center">
+          <p className="font-serif text-3xl md:text-5xl text-background tracking-tight mb-4">
             Not just clean. Functional.
           </p>
-          <p className="text-white/80 text-lg md:text-xl">
+          <p className="text-background/70 text-lg md:text-xl">
             We clear it, clean it, and organize it — so your space actually works for you.
           </p>
         </div>
@@ -240,15 +232,15 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="max-w-sm mx-auto">
-            <div className="rounded-2xl overflow-hidden shadow-2xl bg-black">
+          <div className="max-w-xs mx-auto">
+            <div className="rounded-3xl overflow-hidden shadow-2xl bg-black border-[8px] border-foreground/10">
               <video
                 src="/images/spaceback-video.mp4"
                 autoPlay
                 muted
                 loop
                 playsInline
-                className="w-full aspect-[9/16] object-contain"
+                className="w-full aspect-[9/16] object-cover"
               />
             </div>
           </div>
