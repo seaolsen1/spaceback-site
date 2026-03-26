@@ -84,6 +84,7 @@ export default function Home() {
           </div>
           <div className="hidden md:flex items-center gap-8 text-sm">
             <a href="#services" className="text-muted-foreground hover:text-foreground transition-colors">Services</a>
+            <a href="#work" className="text-muted-foreground hover:text-foreground transition-colors">Our Work</a>
             <a href="#pricing" className="text-muted-foreground hover:text-foreground transition-colors">Pricing</a>
             <a href="#testimonials" className="text-muted-foreground hover:text-foreground transition-colors">Reviews</a>
           </div>
@@ -203,6 +204,43 @@ export default function Home() {
                 <p className="text-muted-foreground leading-relaxed">{item.description}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Our Work - Video Gallery */}
+      <section id="work" className="py-24 px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="font-serif text-4xl md:text-5xl tracking-tight text-foreground mb-4">
+              See the transformation
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Real garages. Real results. Watch the before and after.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <div className="rounded-2xl overflow-hidden border border-border shadow-lg">
+              <div className="bg-secondary px-4 py-2 text-sm font-semibold text-foreground">Before — The Mess</div>
+              <video
+                src="/images/spaceback-before.mp4"
+                controls
+                playsInline
+                preload="metadata"
+                className="w-full aspect-[9/16] object-cover bg-black"
+              />
+            </div>
+            <div className="rounded-2xl overflow-hidden border border-border shadow-lg">
+              <div className="bg-secondary px-4 py-2 text-sm font-semibold text-foreground">After — The Result</div>
+              <video
+                src="/images/spaceback-after.mp4"
+                controls
+                playsInline
+                preload="metadata"
+                className="w-full aspect-[9/16] object-cover bg-black"
+              />
+            </div>
           </div>
         </div>
       </section>
