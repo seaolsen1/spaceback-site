@@ -220,21 +220,16 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="max-w-2xl mx-auto">
-            <div className="rounded-2xl overflow-hidden shadow-2xl relative">
+          <div className="max-w-sm mx-auto">
+            <div className="rounded-2xl overflow-hidden shadow-2xl bg-black">
               <video
                 src="/images/spaceback-before.mp4"
                 autoPlay
                 muted
                 loop
                 playsInline
-                className="w-full aspect-[9/16] max-h-[600px] object-cover"
+                className="w-full aspect-[9/16] object-contain"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
-              <div className="absolute bottom-6 left-6">
-                <p className="text-white text-lg font-semibold">Real work. Real results.</p>
-                <p className="text-white/70 text-sm">Watch the full before &amp; after</p>
-              </div>
             </div>
           </div>
         </div>
