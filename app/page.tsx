@@ -208,7 +208,27 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Our Work - Video Gallery */}
+      {/* Statement Banner with Exterior Photo */}
+      <section className="relative py-32 px-6 overflow-hidden">
+        <div className="absolute inset-0">
+          <img
+            src="/images/garage-exterior.jpg"
+            alt="Clean organized garage exterior"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-foreground/70" />
+        </div>
+        <div className="relative max-w-3xl mx-auto text-center">
+          <p className="font-serif text-3xl md:text-5xl text-white tracking-tight mb-4">
+            Not just clean. Functional.
+          </p>
+          <p className="text-white/80 text-lg md:text-xl">
+            Clear it, load it, haul it. Clear it, clean it, and help get items organized.
+          </p>
+        </div>
+      </section>
+
+      {/* Our Work - Video */}
       <section id="work" className="py-24 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
